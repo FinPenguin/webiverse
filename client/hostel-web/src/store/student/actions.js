@@ -4,8 +4,19 @@ import ServerApi from "../../utility/ServerApi"
 export const loginStudent = (rawData, successCallBack) => {
   ServerApi().post('/student/auth/login', rawData)
     .then(res => {
-      localStorage.setItem('token', res.token)
+      const userData = res.data
+      localStorage.setItem("userData", JSON.stringify(userData))
       successCallBack()
+    })
+    .catch(err => {
+      console.log(err)
+    })
+}
+
+export const fetchStudentMe = () => {
+  ServerApi().get('/student/me')
+    .then(res => {
+      console.log(res)
     })
     .catch(err => {
       console.log(err)

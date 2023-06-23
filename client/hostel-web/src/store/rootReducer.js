@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux'
 
-import studentReducer from './student/reducer'
+import common from './common/reducer'
+import student from './student/reducer'
 
 const rootReducer = combineReducers({
-  studentReducer
+  common,
+  student
 })
 
 export default rootReducer

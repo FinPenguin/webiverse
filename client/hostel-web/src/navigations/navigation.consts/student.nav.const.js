@@ -1,30 +1,30 @@
 export const STUDENT_NAV = [
   {
     title: 'me',
-    path: '/student/me'
+    route: '/student/me'
   },
   {
     title: 'My Leaves',
-    path: '/student/leaves'
+    route: '/student/leaves'
   },
   {
     title: 'My Complaints',
-    path: '/student/complaints'
+    route: '/student/complaints'
   },
   {
     title: 'My Room',
-    path: '/student/room'
+    route: '/student/room'
   },
   {
     title: 'My Mess',
-    path: '/student/mess'
+    route: '/student/mess'
   },
   {
     title: 'My Courses',
-    path: '/student/coures'
+    route: '/student/coures'
   },
   {
     title: 'Events',
-    path: '/student/event'
+    route: '/student/event'
   }
 ]
