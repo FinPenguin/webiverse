@@ -10,7 +10,8 @@ function ServerApi(props) {
   let token = ''
 
   try {
-    token = getLoggedInUser().accessToken
+    console.log('sdklfjasdl;f', getLoggedInUser())
+    token = getLoggedInUser().token
   } catch (e) {
     token = ''
   }
