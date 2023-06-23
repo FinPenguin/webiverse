@@ -9,6 +9,7 @@ import {
 
 import GuestLayout from '../layouts/GuestLayout/GuestLayout'
 import Login from '../views/auth/Login/Login'
+import UserLogin from '../views/auth/Login/UserLogin/UserLogin'
 
 const Navigations = () => {
 
@@ -18,6 +19,10 @@ const Navigations = () => {
                 <RouterRoutes>
 
                     <Route path="/login" element={<GuestLayout><Login /></GuestLayout>} />
+                    <Route path="/login/student" element={<GuestLayout><UserLogin /></GuestLayout>} />
+                    <Route path="/student/me" element={<>Me</>}/>
+
+
 
                 </RouterRoutes>
             </Suspense>
