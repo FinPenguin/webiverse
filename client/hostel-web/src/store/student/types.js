@@ -1,0 +1,1 @@
+export const STUDENT_LOGIN = 'STUDENT_LOGIN'
