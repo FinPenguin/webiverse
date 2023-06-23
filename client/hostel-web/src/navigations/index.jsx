@@ -12,6 +12,7 @@ import Login from '../views/auth/Login/Login'
 import UserLogin from '../views/auth/Login/UserLogin/UserLogin'
 import StudentLayout from '../layouts/StudentLayout/StudentLayout'
 import StudentMe from '../views/studentScreens/StudentMe/StudentMe'
+import StudentSignup from '../views/auth/SignUp/StudentSignup/StudentSignup'
 
 const Navigations = () => {
 
@@ -22,6 +23,8 @@ const Navigations = () => {
 
                     <Route path="/" element={<GuestLayout><Login /></GuestLayout>} />
                     <Route path="/login/student" element={<GuestLayout><UserLogin /></GuestLayout>} />
+                    <Route path="/signup/student" element={<GuestLayout><StudentSignup /></GuestLayout>} />
+
                     <Route path="/student/me" element={<StudentLayout><StudentMe /></StudentLayout>}/>
                     <Route path="/student/leaves" element={<StudentLayout>Meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</StudentLayout>}/>
                     <Route path="/student/complaints" element={<StudentLayout>sdfs</StudentLayout>}/>
