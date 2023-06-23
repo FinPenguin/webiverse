@@ -51,6 +51,14 @@ const UserLogin = () => {
         >
           Login
         </Button>
+        <Button 
+          className="bg-[#207868] px-8" 
+          size="large" 
+          type="primary"
+          onClick={() => navigate('/signup/student')}
+        >
+          signup
+        </Button>
 
       </Form>
     </Card>
